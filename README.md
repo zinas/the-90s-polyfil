@@ -1,4 +1,4 @@
-#The 90s Polyfil - A tale of terror 
+#The 90s Polyfil - A tale of terror
 
 There are people working for many years to create the standards that all of us need, in order to perfect our toolset. One result of such efforts is the draft known as <b>Web Components</b>.
 
@@ -41,10 +41,19 @@ Show an "Under Construction" animated icon, along with some custom text.
 <nineties-under-construction>This page is under construction!</nineties-under-construction>
 ```
 
-### 90s Spacer
-_Not implemented yet_
-
 ### 90s Blink
+Makes the contents inside this element blink
+
+####Things that you can learn by reading the code
+- Everything included in the 90s Welcome element
+- How to handle parameters from custom attributes
+- How to handle change of attributes (try changing the value of data-duration from the console)
+
+####Usage
+```html
+<nineties-blink data-duration="500">Hello there!</nineties-blink>
+```
+### 90s Spacer
 _Not implemented yet_
 
 ### 90s Marquee
