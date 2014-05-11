@@ -2,28 +2,21 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>90s Blink</title>
+    <title>90s Welcome</title>
 
     <!-- Importing Custom Elements -->
-    <!-- <link rel="import" href="nineties-blink.html"> -->
+    <link rel="import" href="nineties-welcome.html">
 
-  <script>
-  var Welcome = Object.create(HTMLElement.prototype);
-
-  Welcome.attachedCallback = function () {
-    var msg = this.innerHTML;
-    this.innerHTML = '';
-    alert(msg);
-  }
-
-  document.registerElement('nineties-welcome', {prototype: Welcome});
-  </script>
-
+    <style>
+      :unresolved {
+        display: none !important;
+      }
+    </style>
 </head>
 <body>
 
     <!-- Using Custom Elements -->
-    <nineties-welcome>Hello there, Nikos!</nineties-blink>
+    <nineties-welcome>Hello there, Nikos!</nineties-welcome>
 
 </body>
 </html>

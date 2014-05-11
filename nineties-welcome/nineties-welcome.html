@@ -1,0 +1,13 @@
+<script>
+(function () {
+  var Welcome = Object.create(HTMLElement.prototype);
+
+  Welcome.attachedCallback = function () {
+    var msg = this.innerHTML;
+    this.innerHTML = '';
+    alert(msg);
+  }
+
+  document.registerElement('nineties-welcome', {prototype: Welcome});
+})();
+</script>
