@@ -1,0 +1,9 @@
+  <script>
+  var Spacer = Object.create(HTMLImageElement.prototype);
+
+  Spacer.createdCallback = function () {
+    this.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+  }
+
+  document.registerElement('nineties-spacer', {prototype: Spacer, extends: 'img'});
+</script>

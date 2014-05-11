@@ -15,13 +15,13 @@ Exactly because this is not meant to be used in any real website, all elements c
 ### 90s Welcome
 A very simple custom element. Anything you put inside the element, becomes an alert box.
 
-####Things that you can learn by reading the code
+#####Things that you can learn by reading the code
 - How do you register a custom element
 - How do you use html imports
 - How do you cope with unstyled content, while the element is being registered?
 - How do you use the equivalent of the "onload" event.
 
-####Usage
+#####Usage
 ```html
 <nineties-welcome>Hello there, Nikos!</nineties-welcome>
 ```
@@ -29,14 +29,14 @@ A very simple custom element. Anything you put inside the element, becomes an al
 ### 90s Under Construction
 Show an "Under Construction" animated icon, along with some custom text.
 
-####Things that you can learn by reading the code
+#####Things that you can learn by reading the code
 - Everything included in the 90s Welcome element
 - How to render content from a template
 - How to access elements inside an imported document
 - How to write styles specific for a template's contents
 - How to add nodes in the Shadow DOM
 
-####Usage
+#####Usage
 ```html
 <nineties-under-construction>This page is under construction!</nineties-under-construction>
 ```
@@ -44,17 +44,26 @@ Show an "Under Construction" animated icon, along with some custom text.
 ### 90s Blink
 Makes the contents inside this element blink
 
-####Things that you can learn by reading the code
+#####Things that you can learn by reading the code
 - Everything included in the 90s Welcome element
 - How to handle parameters from custom attributes
 - How to handle change of attributes (try changing the value of data-duration from the console)
 
-####Usage
+#####Usage
 ```html
 <nineties-blink data-duration="500">Hello there!</nineties-blink>
 ```
 ### 90s Spacer
-_Not implemented yet_
+The infamous spacer.gif at your disposal
+
+#####Things that you can learn by reading the code
+- Everything included in the 90s Welcome element
+- How to extend an <img> element
+
+#####Usage
+```html
+<img is="nineties-spacer" width="300" height="200">
+```
 
 ### 90s Marquee
 _Not implemented yet_
