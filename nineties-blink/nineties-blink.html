@@ -1,0 +1,24 @@
+  <script>
+  var Blink = Object.create(HTMLElement.prototype);
+
+  Blink.blink = function() {
+    if (this.style.visibility === 'hidden') {
+      this.style.visibility = '';
+    } else {
+      this.style.visibility = 'hidden';
+    }
+  }
+
+  Blink.attachedCallback = function () {
+    this.interval = setInterval(this.blink.bind(this),this.dataset.duration/2);
+  }
+
+  Blink.attributeChangedCallback = function (attribute, oldValue, newValue) {
+    if (attribute === 'data-duration') {
+      clearInterval(this.interval);
+      this.interval = setInterval(this.blink.bind(this),this.dataset.duration/2);
+    }
+  }
+
+  document.registerElement('nineties-blink', {prototype: Blink});
+</script>

@@ -5,32 +5,12 @@
     <title>90s Blink</title>
 
     <!-- Importing Custom Elements -->
-    <!-- <link rel="import" href="nineties-blink.html"> -->
-
-  <script>
-  var Blink = Object.create(HTMLElement.prototype);
-
-  Blink.blink = function() {
-    if (this.style.visibility === 'hidden') {
-      this.style.visibility = '';
-    } else {
-      this.style.visibility = 'hidden';
-    }
-  }
-
-  Blink.attachedCallback = function () {
-    var self = this;
-    setInterval(function () {self.blink();},this.dataset.duration/2);
-  }
-
-  document.registerElement('nineties-blink', {prototype: Blink});
-  </script>
-
+    <link rel="import" href="nineties-blink.html">
 </head>
 <body>
 
     <!-- Using Custom Elements -->
-    <nineties-blink data-duration="5000">Hello there!</nineties-blink>
+    <nineties-blink data-duration="500">Hello there!</nineties-blink>
 
 </body>
 </html>
