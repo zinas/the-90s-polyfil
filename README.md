@@ -58,7 +58,7 @@ The infamous spacer.gif at your disposal
 
 #####Things that you can learn by reading the code
 - Everything included in the 90s Welcome element
-- How to extend an <img> element
+- How to extend an &lt;img&gt; element
 
 #####Usage
 ```html
