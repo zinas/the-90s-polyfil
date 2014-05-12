@@ -66,5 +66,13 @@ The infamous spacer.gif at your disposal
 ```
 
 ### 90s Marquee
-_Not implemented yet_
+The all time favourite marquee
 
+#####Things that you can learn by reading the code
+- Everything included in the 90s Welcome element
+- Some weird shit to make marquee working without spending too much time on it
+
+#####Usage
+```html
+<nineties-marquee>Welcome to the 90s!</nineties-marquee>
+```

@@ -1,0 +1,34 @@
+<style>
+  nineties-marquee {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+</style>
+
+<script>
+(function () {
+  var Marquee = Object.create(HTMLElement.prototype);
+
+  Marquee.createdCallback = function () {
+    var s = document.createElement('span'),
+        div = document.createElement('div'),
+        l;
+    s.innerHTML = this.innerHTML;
+    document.querySelector('body').appendChild(div);
+    div.appendChild(s);
+    l = s.offsetWidth;
+    document.querySelector('body').removeChild(div);
+
+    requestAnimationFrame(move.bind(this));
+
+    function move() {
+      var val = this.style.textIndent.replace(/[^-\d\.]/g, '');
+      this.style.textIndent = (-val<=l?val-1:this.offsetWidth)+"px";
+      requestAnimationFrame(move.bind(this));
+    }
+  }
+
+  document.registerElement('nineties-marquee', {prototype: Marquee});
+})();
+</script>
