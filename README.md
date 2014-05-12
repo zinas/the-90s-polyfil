@@ -41,6 +41,19 @@ Show an "Under Construction" animated icon, along with some custom text.
 <nineties-under-construction>This page is under construction!</nineties-under-construction>
 ```
 
+### 90s `&nbsp`
+Places as many `&nbsp`s as you need.
+
+#####Things that you can learn by reading the code
+- Everything included in the 90s Welcome element
+- How to create Shadow DOM
+- How to read custom attributes
+
+#####Usage
+```html
+<nineties-nbsp length="10"></nineties-nbsp>
+```
+
 ### 90s Blink
 Makes the contents inside this element blink
 
