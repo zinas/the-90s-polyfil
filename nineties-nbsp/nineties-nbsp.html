@@ -1,0 +1,18 @@
+  <script>
+  var Nbsp = Object.create(HTMLImageElement.prototype);
+
+  Nbsp.createdCallback = function () {
+  	// build &nbsp;.. string
+  	var nbsps = "",
+  		howMany = parseInt(this.getAttribute("length"), 10) || 1;
+  	while(howMany--){
+  		nbsps += "&nbsp;"
+  	}
+
+  	// Add it into element's shadowRoot
+  	var shadowRoot = this.createShadowRoot();
+  	shadowRoot.innerHTML = nbsps;
+  }
+
+  document.registerElement('nineties-nbsp', {prototype: Nbsp});
+</script>

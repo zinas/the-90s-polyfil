@@ -9,7 +9,7 @@ Ever worked in the 90s? What is your opinion about blinking text, obstrusive pop
 ##The bitter truth
 The truth is, that there are no maniacs, trying religiously to bring the 90s web into our lives again. The 90s Polyfil is not about that. It's about providing fun and simple examples for those who want to start working with Web Components, but while trying, they face problems and can't find more information. Each of the Web Components here, shows something different that you can do.
 
-Exactly because this is not meant to be used in any real website, all elements created are meant to work only on the latest Chrome, with the HTML Imports enabled (it's a flag), and they use no polyfil.
+Exactly because this is not meant to be used in any real website, all elements created are meant to work only on the latest Chrome, with the HTML Imports enabled (it's a flag), and they use no polyfil. Because of cross origin restrictions, you need a static server to see the examples. One is included in the project, but you can use any server you might already have.
 
 ##Custom Elements
 ### 90s Welcome
@@ -41,6 +41,19 @@ Show an "Under Construction" animated icon, along with some custom text.
 <nineties-under-construction>This page is under construction!</nineties-under-construction>
 ```
 
+### 90s `&nbsp`
+Places as many `&nbsp`s as you need.
+
+#####Things that you can learn by reading the code
+- Everything included in the 90s Welcome element
+- How to create Shadow DOM
+- How to read custom attributes
+
+#####Usage
+```html
+<nineties-nbsp length="10"></nineties-nbsp>
+```
+
 ### 90s Blink
 Makes the contents inside this element blink
 
@@ -58,7 +71,7 @@ The infamous spacer.gif at your disposal
 
 #####Things that you can learn by reading the code
 - Everything included in the 90s Welcome element
-- How to extend an <img> element
+- How to extend an &lt;img&gt; element
 
 #####Usage
 ```html
