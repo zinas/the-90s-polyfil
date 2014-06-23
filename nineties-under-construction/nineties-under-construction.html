@@ -32,7 +32,7 @@
 
     var clone = document.importNode(tpl.content, true);
     this.innerHTML = '';
-    this.webkitCreateShadowRoot().appendChild(clone);
+    this.createShadowRoot().appendChild(clone);
   }
 
   document.registerElement('nineties-under-construction', {prototype: UnderConstruction});
